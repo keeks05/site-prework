@@ -32,6 +32,8 @@ startBtn.addEventListener('click', () => {
 
 function stopGame(){
   gamePlaying = false;
+  document.getElementById("startBtn").classList.remove("hidden");
+  document.getElementById("stopBtn").classList.add("hidden");
 }
 
 function lightButton(btn){
@@ -67,7 +69,7 @@ function guess(btn){
   if(!gamePlaying){
     return
   }
-  if(btn === pattern[guessCounter])
+  if(btn === pattern[guessCounter]){
     if(guessCounter === progress){
       if(progress === pattern.length - 1){
          winGame(); 
@@ -78,7 +80,10 @@ function guess(btn){
     }else{
       guessCounter++;
     }  
-}
+  }else{
+    loseGame();
+  }
+}  
 
 function loseGame(){
   stopGame();
