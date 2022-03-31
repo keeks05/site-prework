@@ -14,12 +14,14 @@ var tonePlaying = false;
 const startBtn = document.querySelector('#startBtn');
 const stopBtn = document.querySelector('#stopBtn');
 let volume = 0.5;
+let guessCounter = 0;
   
 startBtn.addEventListener('click', () => {
   progress = 0;
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  playClueSequence();
 })
 
  stopBtn.addEventListener('click', () => {
@@ -27,6 +29,10 @@ startBtn.addEventListener('click', () => {
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
 })
+
+function stopGame(){
+  gamePlaying = false;
+}
 
 function lightButton(btn){
   document.getElementById("button"+btn).classList.add("lit");
@@ -44,7 +50,8 @@ function playSingleClue(btn){
   }
 }
 
-function playCueSequence(){
+function playClueSequence(){
+  guessCounter = 0;
   context.resume();
   let delay = nextClueWaitTime;
   for(let i = 0; i <= progress; i++){
@@ -53,6 +60,24 @@ function playCueSequence(){
     delay += clueHoldTime;
     delay += cluePauseTime;
   }
+}
+
+function guess(btn){
+  console.log("user guessed: " + btn);
+  if(!gamePlaying){
+    return
+  }
+  if(btn)
+}
+
+function loseGame(){
+  stopGame();
+  alert("Game Over. You Lost Buddy.");
+}
+
+function winGame(){
+  stopGame();
+  alert("And the crowd goes wild YOU actually won buddy");
 }
 
 // Sound Synthesis Functions
