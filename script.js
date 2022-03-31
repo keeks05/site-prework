@@ -44,6 +44,14 @@ function playSingleClue(btn){
   }
 }
 
+function playCueSequence(){
+  context.resume();
+  let delay = nextClueWaitTime;
+  for(let i = 0; i <= progress; i++){
+    console.log("Play single clue: " + pattern[i] + " in " + d)
+  }
+}
+
 // Sound Synthesis Functions
 const freqMap = {
   1: 261.6,
