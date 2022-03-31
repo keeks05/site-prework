@@ -67,7 +67,17 @@ function guess(btn){
   if(!gamePlaying){
     return
   }
-  if(btn)
+  if(btn === pattern[guessCounter])
+    if(guessCounter === progress){
+      if(progress === pattern.length - 1){
+         winGame(); 
+      }else{
+        progress++;
+        playClueSequence();
+      }
+    }else{
+      guessCounter++;
+    }  
 }
 
 function loseGame(){
