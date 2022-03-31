@@ -1,5 +1,11 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
+// Global Constants
+const clueHoldTime = 1000;
+const cluePauseTime = 333;
+const nextClueWaitTime = 1000;
+
+
 // Global variables
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
 var progress = 0;
@@ -7,7 +13,7 @@ var gamePlaying = false;
 var tonePlaying = false;
 const startBtn = document.querySelector('#startBtn');
 const stopBtn = document.querySelector('#stopBtn');
-const volume = 0.5;
+let volume = 0.5;
   
 startBtn.addEventListener('click', () => {
   progress = 0;
@@ -21,6 +27,22 @@ startBtn.addEventListener('click', () => {
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
 })
+
+function lightButton(btn){
+  document.getElementById("button"+btn).classList.add("lit");
+}
+
+function clearButton(btn){
+  document.getElementById("button"+btn).classList.remove("lit")
+}
+
+function playSingleClue(btn){
+  if(gamePlaying){
+    lightButton(btn);
+    playTone(btn, clueHoldTime);
+    setTimeout(clearButton, clueHoldTime, btn);
+  }
+}
 
 // Sound Synthesis Functions
 const freqMap = {
