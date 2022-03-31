@@ -28,4 +28,53 @@ video {
 
 h1 {
   font-family: verdana, arial, sans-serif;
+  text-decoration: underline;
+  text-decoration-color: darkgrey;
+}
+
+button {
+  padding: 10px;
+  border-radius: 40px;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background-color: lightgreen;
+}
+
+#button2 {
+  background-color: lightblue;
+}
+
+#button3 {
+  background-color: pink;
+}
+
+#button4 {
+  background-color: lightyellow;
+}
+
+#button1:active {
+  background-color: green;
+}
+
+#button2:active {
+  background-color: blue;
+}
+
+#button3:active {
+  background-color: red;
+}
+
+#button4:active {
+  background-color: yellow;
 }
