@@ -48,7 +48,10 @@ function playCueSequence(){
   context.resume();
   let delay = nextClueWaitTime;
   for(let i = 0; i <= progress; i++){
-    console.log("Play single clue: " + pattern[i] + " in " + d)
+    console.log("Play single clue: " + pattern[i] + " in " + delay + "ms");
+    setTimeout(playSingleClue, delay, pattern[i]);
+    delay += clueHoldTime;
+    delay += cluePauseTime;
   }
 }
 
