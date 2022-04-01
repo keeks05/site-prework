@@ -6,7 +6,7 @@ Submitted by: **Enrique Melgoza**
 
 Time spent: **5** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com/edit/#!/cyber-right-clownfish)
+Link to project: (https://glitch.com/edit/#!/cyber-right-clownfish)
 
 ## Required Functionality
 
@@ -50,10 +50,10 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 [https://developer.mozilla.org/en-US/]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[One challege that I had when creating this submission was getting an accurate GIF on the README. For some odd reason, the GIF conversion only recorded 5 seconds which did not allow me to capture the entire functionality of the app. In adddtion, I followed the given tutorial with how to convert MP4 to GIF and still found trouble when trying to covert the video to GIF. I was able to complete all required features despite the GIF(s) only showing some of them. To be fair it was my first time using GIFS and I found that helpful to know how to work with diffrent file types. Another challege that I found was understading the sound function and how it worked with the buttons; alot of the code in the functions I haven't really worked with before so I had to look stuff up documentation to get a better sense of everything. Overall, a fun task to complete.]
+[One challege that I had when creating this submission was getting an accurate GIF on the README. For some odd reason, the GIF conversion only recorded 5 seconds which did not allow me to capture the entire functionality of the app. In adddtion, I followed the given tutorial with how to convert MP4 to GIF and still found trouble when trying to covert the video to GIF. I was able to complete all required features despite the GIF(s) only showing some of them. To be fair it was my first time using GIFS and I found that helpful to know how to work with different file types. Another challenge that I found was understading the sound function and how it worked with the buttons; alot of the code in the functions I haven't really worked with before so I had to look stuff up (documentation) to get a better sense of everything. Overall, a fun task to complete.]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[One question about web development that I still have after completing my submission was about the backend side of web development. Specfically with authethicating user data and request and all that fun stuff. I'm also curious as to how many different web development tools there exist]
+[One question about web development that I still have after completing my submission was about the backend side of web development. Specfically with authethicating user data and requests and all that fun stuff. I'm also curious as to how many different web development tools there exist.]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 [If I had more time I would make the guessing game random and not so static. How I would go about that is with using JavaScript's built-in random function to create a random number from my choosing. I would have also liked to make the webpage a little more dynamic and interactive as far as user input(e.g buttons). Maybe some animations for the buttons or a special winning screen where a special message and picture would be displayed.]
